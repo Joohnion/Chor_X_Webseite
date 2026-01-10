@@ -16,20 +16,20 @@ class MeinHeader extends HTMLElement {
         <header class="site-header">
           <div class="header-inner">
               <a href="/index.html">
-                <img src="/assets/images/ChorX_Symbol.png" class="logo-img" alt="Symbol">
+                <img src="./assets/images/ChorX_Symbol.png" class="logo-img" alt="Symbol">
               </a>
               <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="/pages/ueber-uns/">Über uns</a></li>
-                    <li><a href="/pages/mitsingen/">Mitsingen</a></li>
-                    <li><a href="/pages/konzerte/">Konzerte</a></li>
-                    <li><a href="/pages/chorga/">Vorstand</a></li>
-                    <li><a href="/pages/chorfahrt/">Chorfahrt</a></li>
-                    <li><a href="/pages/impressum/">Impressum</a></li>
+                    <li><a href="./pages/ueber-uns/">Über uns</a></li>
+                    <li><a href="./pages/mitsingen/">Mitsingen</a></li>
+                    <li><a href="./pages/konzerte/">Konzerte</a></li>
+                    <li><a href="./pages/chorga/">Vorstand</a></li>
+                    <li><a href="./pages/chorfahrt/">Chorfahrt</a></li>
+                    <li><a href="./pages/impressum/">Impressum</a></li>
                 </ul>
               </nav>
               <a href="/index.html">
-                <img src="/assets/images/logo.png" class="logo-img" alt="Logo">
+                <img src="./assets/images/logo.png" class="logo-img" alt="Logo">
               </a>
           </div>
         </header>
