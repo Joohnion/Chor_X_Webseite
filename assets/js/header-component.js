@@ -3,7 +3,7 @@ class MeinHeader extends HTMLElement {
     let data;
     try {
       // JSON laden (Pfad ggf. anpassen, falls data-Ordner woanders liegt)
-      const response = await fetch('/data/site-config.json');
+      const response = await fetch('./data/site-config.json');
       data = await response.json();
     } catch (e) {
       console.error("Inhalte konnten nicht geladen werden", e);
