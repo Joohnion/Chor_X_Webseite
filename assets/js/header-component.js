@@ -12,7 +12,37 @@ class MeinHeader extends HTMLElement {
 
     // 1. Header & Banner generieren
     // Nutzt data.Banner.text für das rotierende Banner
+     if (window.location.pathname.includes('/pages/'))
+     {
     this.innerHTML = `
+        <header class="site-header">
+          <div class="header-inner">
+              <a href="/index.html">
+                <img src="./assets/images/ChorX_Symbol.png" class="logo-img" alt="Symbol">
+              </a>
+              <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../ueber-uns/">Über uns</a></li>
+                    <li><a href="../mitsingen/">Mitsingen</a></li>
+                    <li><a href="../konzerte/">Konzerte</a></li>
+                    <li><a href="../chorga/">Vorstand</a></li>
+                    <li><a href="../chorfahrt/">Chorfahrt</a></li>
+                    <li><a href="../impressum/">Impressum</a></li>
+                </ul>
+              </nav>
+              <a href="/index.html">
+                <img src="./assets/images/logo.png" class="logo-img" alt="Logo">
+              </a>
+          </div>
+        </header>
+        <div id="side-banner">
+          <div class="rotated-text">
+            <p>${data.Banner.text}</p>
+          </div>
+        </div>
+    `;}
+      else{
+            this.innerHTML = `
         <header class="site-header">
           <div class="header-inner">
               <a href="/index.html">
@@ -38,7 +68,7 @@ class MeinHeader extends HTMLElement {
             <p>${data.Banner.text}</p>
           </div>
         </div>
-    `;
+    `;}
 
 // Optional: Menü schließen, wenn ein Link geklickt wird
 document.querySelectorAll('.nav-links a').forEach(link => {
