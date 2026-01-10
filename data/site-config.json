@@ -1,0 +1,43 @@
+{
+ "Banner": {
+    "text": "Winterkonzert 23.01.26 19:00 Uhr, Akademisches Gymnasium Beethovenplatz 1, 1010 Wien +++ Neue Mitglieder gerne gesehen ab 02.02.26."
+},
+  "Startseite": {
+    "title_in_Reiter": "Wir sind Chor X",
+    "welcome_title": "Hallo Internet",
+    "text": "Willkommen auf der Webseite des Chor X aus Wien."
+  },
+  "Ueber_uns":{
+      "title_im_Reiter": "Über uns - Chor X",
+      "welcome_title": "Wir sind der Chor X",
+      "text": "Hallo und willkommen in der Welt des Chor X! Gegründet im Jahre 2011 bringen wir seit über10 Jahren jugendliche Frische, Leidenschaft und Lässigkeit in die Wiener Chorszene. Wie wir das schaffen? Oft durch Charme und Spritzigkeit, hauptsächlich aber mit Gesang aus den unterschiedlichsten Genres und Musikstilen, die wir 3-4 mal pro Jahr in ein unterhaltsames Konzert packen und damit Säle wie im Akademischen Gymnasium oder Kirchenräume wie in der Pfarre St. Florian füllen.Unser Kerngedanke ist einfach: Alle die Lust zum Singen haben, kann mitsingen. Ohne Eingangshürden. Ohne Lampenﬁeber. Ohne Stress. Dadurch können wir mit stolz sagen: Wir sind mit einer der jüngsten Chöre Wiens, mit starken, ausgeglichenen Registern einem ordentlichen Patzen Energie."
+    },
+  "Mitsingen":{
+      "title_im_Reiter": "Mitsingen im Chor X",
+      "welcome_title": "Unser Probenort",
+      "Addresse": "Schulaula 1OG <br> Wiedener Gymnasium <br> Wiedner Gürtel 68 <br> A-1040 Wien",
+      "Sub_Unterschrift": "Mitsingen ohne Vorsingen – Einfach vorbeikommen!",
+      "text": "Bei uns gibt’s keine Casting-Show und keine Jury mit strengem Blick – wenn du Lust hast mitzusingen, komm einfach in die Probe! In den ersten sechs Wochen des Semesters kannst du jederzeit reinschnuppern und schauen, ob unser Chor dein Ding ist. Bitte hab Verständnis: Gegen Ende des Semesters fiebern wir unserem großen Abschlusskonzert entgegen. Da wird’s für uns stressig, und neue Gesichter onboarden ist dann wie mitten im Film die Hauptrolle wechseln – eher schwierig. Ob gerade neue Sängerinnen und Sänger willkommen sind, siehst du im gelben Banner rechts. Und noch ein wichtiger Hinweis: Unser Probenort ist eine Schule. Das heißt, in den Ferien gibt’s keine Proben – wir gönnen uns auch mal eine Pause! Also: Keine Angst, kein Vorsingen, einfach vorbeikommen und mitsingen!"
+    },
+"Konzerte":{
+    "title_im_Reiter": "Konzerte Chor X",
+    "welcome_title": "Konzerte",
+    "text": "Monatelang proben wir, feilen an Tönen, kämpfen mit hohen Lagen und tiefen Bässen alles für diesen einen Moment: unser Konzert! Eintritt? Natürlich frei! Wir wollen, dass jede*r dabei sein kann. Und wenn euch unser Gesang so sehr berührt, dass ihr denkt: „Das war besser als Netflix!“ dann freuen wir uns über eine kleine Spende. Also kommt vorbei, bringt eure Freunde mit und lasst euch von uns musikalisch umarmen. Versprochen: Wir singen, ihr genießt und am Ende gehen alle mit einem Ohrwurm nach Hause.Unser nächstes Konzert findet ihr im gelben Banner rechts.",
+    "naechstes_datum": "23. Jänner 2026",
+    "naechster_ort": "Akademisches Gymnasium,",
+    "addresse": "Beethovenplatz 1, 1010 Wien"
+},
+"Vorstand":{
+    "title_im_Reiter": "Vorstand Chor X",
+    "welcome_title": "ChorGa – Die Organisation hinter den Kulissen",
+    "text": "Damit bei uns nicht nur die Töne stimmen, sondern auch alles drumherum, gibt es ChorGa! Hier wird organisiert, geplant und koordiniert: von Konzerten über Chorfahrten bis hin zu Social Media und unserem Repertoire. Kurz gesagt: ChorGa sorgt dafür, dass wir nicht nur gut klingen, sondern auch alles reibungslos läuft. Das Beste daran: Du kannst jederzeit unverbindlich zu einer ChorGa-Sitzung kommen und reinschnuppern. Wenn du Lust hast, kannst du Aufgaben übernehmen – ganz nach deinen persönlichen Neigungen und Interessen. Egal ob du als Starkoch für kulinarische Highlights sorgst, als ITler unsere Technik rockst, als Organisationstalent den Überblick behältst oder als Social-Media-Profi unsere Online-Präsenz glänzen lässt, bei der ChorGa ist Platz für jede Fähigkeit und jede helfende Hand. Ohne ChorGa wäre Chaos – mit ChorGa wird’s Musik!"
+},
+"Chorfahrt":{
+    "title_im_Reiter": "Chorfahrt Chor X",
+    "welcome_title": "Chorfahrt – Unser musikalischer ausbruch aus dem Altag!",
+    "text": "Einmal pro Semester heißt es: Koffer packen, Noten einpacken und ab ins Schul- oder Freizeitheim! Aber keine Sorge, wir fahren nicht nur zum Proben (auch wenn das natürlich dazugehört). Die Chorfahrt ist eines unserer Semesterhighlights: Ein Wochenende gemeinsam singen, Spaß haben, Singen, Spielen, Lachen, Mottopartys, Insider-Jokes inklusive.Hier werden neue Freundschaften geknüpft und alte vertieft. Kurz gesagt: Ein Wochenende voller Musik, guter Laune und Erinnerungen, die bleiben. Wenn du dabei bist, wirst du merken: Hier geht’s nicht nur um Töne, sondern um Menschen, die zusammen etwas Großartiges schaffen. Also: Sei dabei und erlebe, wie Chor nicht nur klingt, sondern lebt!"
+},
+"Impressum":{
+    "title_im_Reiter": "Impressum Chor X",
+    "welcome_title": "Impressum"
+}}

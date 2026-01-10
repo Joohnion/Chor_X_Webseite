@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../assets/css/header_banner.css">
+  <link rel="stylesheet" href="../../assets/css/mitsingen.css">
+  <link rel="stylesheet" href="../../assets/css/Mein_Footer.css">
+  <script src="../../assets/js/header-component.js" defer></script>
+  <script src="../../assets/js/Bottom_Grid.js" defer></script>
+  <title>Mitsingen</title>
+</head>
+<body>
+    <mein-header></mein-header>
+
+
+    <main class="location-page">
+        <div class="banner-wrapper">    
+            <!-- Header-Bereich mit Bild, Logo und Pfeil -->
+            <div class="banner-container">
+                <!-- Das Hauptbild -->
+                <img src="../../assets/images/Anfahrt.png" alt="Unser Probenort" class="main-banner-img">
+                <!-- Das SVG-Overlay für den Pfeil -->
+                <svg class="arrow-overlay" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="red" />
+                    </marker>
+                </defs>
+                <!-- x1/y1 ist der Start am Logo, x2/y2 ist die Pfeilspitze am Eingang -->
+                <!-- Ändere x2="750" y2="300" so ab, dass es auf deinen Eingang zeigt -->
+                <line x1="100" y1="350" x2="300" y2="325" stroke="red" stroke-width="4" marker-end="url(#arrowhead)" />
+                </svg>
+            </div>
+            <!-- Das Logo (überlappend) -->
+            <img src="../../assets/images/logo.png" alt="Logo" class="overlay-logo">
+        </div>
+  <!-- Text-Bereich darunter -->
+  <section class="info-content">
+  <h1 id="welcome-title"></h1>
+    <address>
+      <div id="address-box"></div>
+    </address>
+    <h2 id="sub-signature"></h2>
+  <p id="page-text"></p>
+  </section>
+
+
+</main>
+    <mein-footer></mein-footer>
+
+
+  <footer class="footer">
+    <small>© 2026 Chor X</small>
+  </footer>
+</body>
+</html>

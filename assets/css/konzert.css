@@ -1,0 +1,115 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Oberes Raster 2/3 zu 1/3 */
+.top-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 2 Teile zu 1 Teil */
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+/* Container für das Logo */
+.banner-logo {
+  display: flex;
+  align-items: center;   /* Zentriert das Logo vertikal */
+  justify-content: center; /* Zentriert das Logo horizontal */
+  background-color: #ffffff; /* Optional: Falls das Logo einen Hintergrund braucht */
+  border-radius: 8px;
+}
+
+/* Das Logo-Bild selbst begrenzen */
+.banner-logo img {
+  width: auto;           /* Verhindert das Strecken */
+  max-width: 40% !important;  /* Logo nimmt nur 60% des verfügbaren Platzes ein */
+  max-height: 40% !important; /* Verhindert, dass es zu hoch wird */
+  height: auto;          /* Proportionale Höhe */
+  object-fit: contain;   /* Sorgt dafür, dass nichts abgeschnitten wird */
+  object-position: center; /* Zentriert das Bild im Container */
+}
+.top-banner-grid img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Überschriften-Effekt */
+.headline-section {
+  display: flex;         /* Ordnet die Elemente nebeneinander an */
+  align-items: baseline; /* Richtet sie an der unteren Textlinie aus */
+  gap: 20px;             /* Abstand zwischen den Wörtern */
+  margin-bottom: 3rem;
+  overflow: hidden;      /* Verhindert Umbruch bei sehr großen Schriften */
+}
+
+.headline-section h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.h-strong { font-weight: 900; opacity: 1.0; font-size: 4rem; }
+.h-medium { font-weight: 500; opacity: 0.5; font-size: 3.5rem; }
+.h-light  { font-weight: 200; opacity: 0.2; font-size: 3rem; }
+
+/* Text links, Bild rechts */
+.split-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.text-side p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.2rem !important;
+  text-align: justify;
+    -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.image-side img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Untere Bilder 1/3 zu 2/3 */
+.bottom-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Rechts doppelt so groß wie links */
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.bottom-image-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-small img {
+
+object-position: top;    
+}
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+  .top-banner-grid, .split-content, .bottom-image-grid {
+    grid-template-columns: 1fr;
+  }
+  .h-strong { font-size: 2.5rem; }
+  .h-medium { font-size: 2.2rem; }
+  .h-light  { font-size: 1.9rem; }
+}
+/* Container der Kachel muss relativ sein, damit der Stempel darin bleibt */
+.tile {
+  position: relative;
+  overflow: hidden; /* Schneidet den Stempel ab, falls er übersteht */
+}

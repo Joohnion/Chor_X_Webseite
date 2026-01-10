@@ -1,0 +1,88 @@
+
+/* Mobile Ansicht: Kacheln untereinander */
+@media (max-width: 768px) {
+  .top-grid {
+    grid-template-columns: 1fr; /* Nur eine Spalte auf dem Handy */
+  }
+  
+  .content-wrapper {
+    padding: 1rem;
+  }
+}
+/* Für 3 Kacheln zum Schluss */
+.lower-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;    
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+
+        }
+        /* Spezielle Formatierung für die Follow-Kachel */
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 100px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #a5d6a7;
+        }
+/* Kachel-Styling */
+.sub-tile {
+  aspect-ratio: 1 / 1; /* Macht die Kacheln quadratisch */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Diese Regel stellt sicher, dass der Text auch nach dem Klicken weiß bleibt */
+.tile, 
+.tile:link, 
+.tile:visited, 
+.tile:hover, 
+.tile:active {
+    color: white;
+    text-decoration: none;
+}
+
+.tile-green { background-color: #80c40f; }
+.follow-tile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Schiebt Inhalt auseinander */
+    padding: 1.5rem 0; /* Abstand oben und unten */
+    box-sizing: border-box;
+}
+
+/* Zentriert das Wort "Follow" vertikal */
+.follow-tile h2 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+
+/* Die Icon-Leiste am unteren Ende */
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}

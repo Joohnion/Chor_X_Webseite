@@ -1,0 +1,64 @@
+/* Der neue äußere Rahmen */
+.banner-wrapper {
+  position: relative; /* Bezugspunkt für das Logo */
+  height: auto;
+  margin-left: auto;   /* Rechtsbündig */
+  margin-right: 60px;  /* Abstand zum rechten Rand (groß genug für das Logo) */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container für das Banner-Konstrukt */
+.banner-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+/* Bild und SVG liegen im selben Grid-Feld übereinander */
+.main-banner-img, 
+.arrow-overlay {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Das Logo wird absolut über das Bild gelegt */
+.overlay-logo {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 21%; /* Größe anpassen */
+  z-index: 10;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+}
+
+/* Das SVG ist durchsichtig und liegt über dem Bild */
+.arrow-overlay {
+  pointer-events: none; /* Man kann durch den Pfeil hindurchklicken */
+  z-index: 5;
+}
+
+/* Text-Styling unter dem Bild */
+.info-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+address {
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #555;
+}

@@ -1,0 +1,99 @@
+/* Body Allgemeine Einstellungen */
+body {
+  padding-right: 60px; /* Hält Platz für den Banner an der Rechten Seite */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* HEADER AUF ALLEN SEITEN */
+.header-inner {
+  display: flex;
+  align-items: center;      /* WICHTIG: Vertikale Zentrierung */
+  justify-content: center;  /* Zentriert die Gruppe */
+  margin: 0 50px;           /* Äußerer Abstand zum Bildschirmrand */
+}
+
+.main-nav {
+  flex-grow: 1;             /* Die Nav nimmt allen freien Platz in der Mitte ein */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly; /* Verteilt die Links gleichmäßig in der Mitte */
+  width: 100%;
+}
+
+.logo-img {
+  height: 60px;             /* Etwas größer, da 30px oft zu klein für Logos ist */
+  width: auto;
+  display: block;
+  flex-shrink: 0;           /* Verhindert, dass das Logo gequetscht wird */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-family: sans-serif;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* SIDE BANNER */
+#side-banner {
+  position: fixed;
+  right: 0;
+  top: 0px ;
+  width:60px;
+  height: calc(100vh);
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.rotated-text {
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  color: black;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation: scroll-up 20s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%)
+  }
+  100% {
+    transform: translateY(-100vh)
+  }
+}
+
+/* Desktop: Button immer versteckt */
+.menu-toggle {
+    display: none !important;
+}
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+    /* Die komplette Navigationsleiste ausblenden */
+    .main-nav {
+        display: none !important;
+    }
+
+    /* Sicherstellen, dass auch der Hamburger-Button nicht erscheint */
+    .menu-toggle {
+        display: none !important;
+    }
+
+    /* Optional: Header-Layout anpassen */
+    .header-inner {
+        justify-content: space-between; /* Logos bleiben links und rechts außen */
+        padding: 0.5rem 1rem;
+    }
+}

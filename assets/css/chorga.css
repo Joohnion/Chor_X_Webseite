@@ -1,0 +1,45 @@
+/* Container für die gesamte Unterseite */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Grid für die 3 Kacheln */
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf Desktop */
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.tile-white { background-color: #ffffff; border: 1px solid #eee; }
+.tile-white img { width: 70%; height: auto; }
+
+.tile-image-bg {
+  background: url('../../assets/images/ChorGa.png') center/cover;
+}
+
+/* Text-Bereich */
+.text-section {
+  margin: 3rem 0;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.justify-text {
+  text-align: justify; /* Blockschrift */
+  line-height: 1.8;
+  hyphens: auto; /* Automatische Silbentrennung für schönere Blockschrift */
+}
+
+/* Bild nach Text */
+.full-width-img img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 5rem;
+}

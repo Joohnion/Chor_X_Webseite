@@ -1,0 +1,82 @@
+/* Container für die gesamte Unterseite */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Grid für die 3 Kacheln */
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Spalten auf Desktop */
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Kachel-Styling */
+.sub-tile {
+  aspect-ratio: 1 / 1; /* Macht die Kacheln quadratisch */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tile-white { background-color: #ffffff; border: 1px solid #eee; }
+.tile-white img { width: 70%; height: auto; }
+
+.tile-green { background-color: #80c40f; }
+
+.tile-image-bg {
+  background: url('../../assets/images/Mitsingen.png') center/cover;
+}
+
+/* Text-Bereich */
+.text-section {
+  margin: 3rem 0;
+}
+
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.justify-text {
+  text-align: justify; /* Blockschrift */
+  line-height: 1.8;
+  hyphens: auto; /* Automatische Silbentrennung für schönere Blockschrift */
+}
+
+/* Bild nach Text */
+.full-width-img img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 5rem;
+}
+
+/* Das halbe Logo am Ende */
+.half-logo-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Schneidet das Bild ab */
+  height: 50%; /* Höhe so wählen, dass nur die Hälfte sichtbar ist */
+}
+
+.half-logo-container img {
+  width: 400px;
+  opacity: 0.2; /* Dezent im Hintergrund */
+  transform: translateY(50%); /* Schiebt das Bild zur Hälfte aus dem Container */
+}
+
+/* Mobile Ansicht: Kacheln untereinander */
+@media (max-width: 768px) {
+  .top-grid {
+    grid-template-columns: 1fr; /* Nur eine Spalte auf dem Handy */
+  }
+  
+  .content-wrapper {
+    padding: 1rem;
+  }
+}

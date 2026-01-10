@@ -1,0 +1,96 @@
+(() => {
+  document.addEventListener('DOMContentLoaded', async () => {
+    const tilesContainer = document.querySelector('.tiles');
+    if (!tilesContainer) return;
+
+    try {
+      const [contentRes, pagesRes] = await Promise.all([
+        fetch('./data/site-config.json', { cache: 'no-cache' }),
+        fetch('./data/pages.json', { cache: 'no-cache' })
+      ]);
+
+      if (!contentRes.ok || !pagesRes.ok) throw new Error("Fehler beim Laden der JSON-Dateien");
+
+      const contentData = await contentRes.json();
+      const pages = await pagesRes.json();
+
+      const fragment = document.createDocumentFragment();
+
+      pages.forEach(p => {
+        let tileElement;
+
+        // 1. Erstellung des Elements (Link oder Div)
+        if (p.title === 'Follow') {
+          tileElement = document.createElement('div'); // Nicht klickbar
+          tileElement.className = 'tile tile-social';
+        } else {
+          tileElement = document.createElement('a'); // Normaler Link
+          tileElement.href = `pages/${p.slug}/`;
+          tileElement.className = 'tile';
+        }
+
+        tileElement.setAttribute('aria-label', p.title);
+
+        // Breite Kachel für Konzerte
+        if (p.title === 'Konzerte') {
+          tileElement.classList.add('tile-wide');
+        }
+
+        // Hintergrundbild
+        if (p.image) {
+          tileElement.classList.add('tile-with-image');
+          tileElement.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${p.image}')`;
+        }
+
+        // 2. Basis-Inhalt (Titel & Beschreibung)
+        tileElement.innerHTML = `
+          <div class="tile-title">${p.title}</div>
+          ${p.description ? `<div class="tile-desc">${p.description}</div>` : ''}
+        `;
+
+        // 3. SPEZIAL-LOGIK: Follow (SVGs einfügen)
+        if (p.title === 'Follow') {
+          // 1. Erstelle einen leeren Platzhalter für oben damit Kachel Titel auf selber höhe ist wie bei anderen Kacheln
+          const spacer = document.createElement('div');
+          spacer.style.height = "20px"; // Ungefähre Höhe deiner Icon-Leiste + Margin
+          tileElement.prepend(spacer); // Ganz oben in die Kachel einfügen
+
+          const socialIconsDiv = document.createElement('div');
+          socialIconsDiv.className = 'social-icons'; // Nutze deine bestehende Klasse
+          socialIconsDiv.style.marginTop = "auto"; // Schiebt Icons nach unten
+          socialIconsDiv.innerHTML = `
+            <a href="https://www.instagram.com/chor.x/" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://www.facebook.com/chor.x.wien" target="_blank" title="Facebook"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+            <a href="mailto:chor.x@gmx.at" title="E-Mail"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l1.324 1.072c.338.274.738.411 1.138.411s.799-.137 1.138-.411l1.324-1.072 5.008 6.336h-14.94l5.008-6.336zm8.163-1.259l4.661-3.776v9.522l-4.661-5.746z"/></svg></a>
+          `;
+          tileElement.appendChild(socialIconsDiv);
+        }
+
+        // 4. SPEZIAL-LOGIK: Konzerte (Stempel)
+        if (p.title === 'Konzerte') {
+            const stamp = document.createElement('div');
+            stamp.className = 'concert-stamp';
+            
+            const datum = contentData.Konzerte.naechstes_datum || "TBA";
+            const ort = contentData.Konzerte.naechster_ort || "Wien";
+            const adresse = contentData.Konzerte.addresse || "TBA";
+            
+            stamp.innerHTML = `
+                <span>Nächstes Konzert</span>
+                <small>${datum}</small>
+                <small>${ort}</small>
+                <small>${adresse}</small>
+            `;
+            tileElement.appendChild(stamp); // Hier stand vorher a.appendChild
+        }
+
+        fragment.appendChild(tileElement);
+      });
+
+      tilesContainer.append(fragment);
+
+    } catch (e) {
+      console.error('Fehler beim Initialisieren der Kacheln:', e);
+    }
+  });
+})();
