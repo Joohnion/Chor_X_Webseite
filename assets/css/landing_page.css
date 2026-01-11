@@ -248,7 +248,7 @@
   .tile.tile-social {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; /* Inhalte beginnen oben */
+      justify-content: space-evenly; /* Inhalte beginnen oben */
       align-items: center;         /* horizontal mittig */
       gap: 4rem;                   /* Abstand zwischen Titel und Icons */
       min-height: 200px;           /* optional, damit unten wirklich "unten" ist */
