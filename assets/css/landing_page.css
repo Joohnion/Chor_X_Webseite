@@ -244,4 +244,15 @@
   .tiles .tile:nth-child(5) {
     grid-column: span 1;
   }
+
+  .tile.tile-social {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Inhalte beginnen oben */
+      align-items: center;         /* horizontal mittig */
+      gap: 1rem;                   /* Abstand zwischen Titel und Icons */
+      min-height: 200px;           /* optional, damit unten wirklich "unten" ist */
+      padding-bottom: 15px;
+    }
+
 }
