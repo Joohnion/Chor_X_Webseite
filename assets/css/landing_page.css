@@ -10,42 +10,6 @@
   padding: 1rem;
 }
 
-/* Tablet-Ansicht: 2 Spalten */
-@media (max-width: 900px) {
-  .tiles {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Handy-Ansicht: 1 Spalte */
-@media (max-width: 600px) {
-
-  /* 1. Globales Box-Sizing für Safari erzwingen */
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-
-  .tiles {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem; /* Etwas kleinerer Abstand auf Handys */
-    width: 100%
-  }
-  .tiles .tile {
-    grid-column: span 1 !important;
-    overflow: visible;
-  }
-  .tile {
-    aspect-ratio: auto !important;
-    width: 100% !important; /* Alle Kacheln müssen gleich breit sein */
-    box-sizing: border-box;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .tiles .tile:nth-child(5) {
-    grid-column: span 1;
-  }
-
-}
 /* Einstellung der einzelnen Kacheln der Landing Page*/
 .tile {
   aspect-ratio: 1/0.25;
@@ -243,4 +207,42 @@
 .social-icons a:hover {
     transform: scale(1.2);
     color: #f0f0f0; /* Oder deine Akzentfarbe */
+}
+
+
+/* Tablet-Ansicht: 2 Spalten */
+@media (max-width: 900px) {
+  .tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Handy-Ansicht: 1 Spalte */
+@media (max-width: 600px) {
+
+  /* 1. Globales Box-Sizing für Safari erzwingen */
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem; /* Etwas kleinerer Abstand auf Handys */
+    width: 100%
+  }
+  .tiles .tile {
+    grid-column: span 1 !important;
+    overflow: visible;
+  }
+  .tile {
+    aspect-ratio: auto !important;
+    width: 100% !important; /* Alle Kacheln müssen gleich breit sein */
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem 1rem;
+  }
+  .tiles .tile:nth-child(5) {
+    grid-column: span 1;
+  }
 }
