@@ -5,7 +5,7 @@ class Meinfooter extends HTMLElement {
     
     <!-- Kachel 1: Wir -->
     <div class="sub-tile tile-green">
-    <a href="/../ueber-uns/"class="tile">
+    <a href="/pages/ueber-uns/"class="tile">
      <h2>Wir</h2>
     </a>
     </div>
@@ -30,7 +30,7 @@ class Meinfooter extends HTMLElement {
 
     <!-- Kachel 3: Impressum -->
     <div class="sub-tile tile-green">
-    <a href="/../impressum/" class="tile">
+    <a href="/pages/impressum/" class="tile">
         <h2>Impressum</h2>
     </a>
     </div>
