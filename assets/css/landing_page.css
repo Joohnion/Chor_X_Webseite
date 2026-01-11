@@ -19,6 +19,12 @@
 
 /* Handy-Ansicht: 1 Spalte */
 @media (max-width: 600px) {
+
+  /* 1. Globales Box-Sizing für Safari erzwingen */
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+
   .tiles {
     grid-template-columns: 1fr !important;
     gap: 1.5rem; /* Etwas kleinerer Abstand auf Handys */
@@ -29,6 +35,7 @@
     overflow: visible;
   }
   .tile {
+    aspect-ratio: auto;
     width: 100% !important; /* Alle Kacheln müssen gleich breit sein */
     max-width: none;         /* Entfernt eventuelle Begrenzungen */
     box-sizing: border-box;
