@@ -240,7 +240,6 @@
     box-sizing: border-box;
     margin-left: 0;
     margin-right: 0;
-    padding: 2rem 1rem;
   }
   .tiles .tile:nth-child(5) {
     grid-column: span 1;
