@@ -35,9 +35,8 @@
     overflow: visible;
   }
   .tile {
-    aspect-ratio: auto;
+    aspect-ratio: auto !important;
     width: 100% !important; /* Alle Kacheln müssen gleich breit sein */
-    max-width: none;         /* Entfernt eventuelle Begrenzungen */
     box-sizing: border-box;
     margin-left: 0;
     margin-right: 0;
