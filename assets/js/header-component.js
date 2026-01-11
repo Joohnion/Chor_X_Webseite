@@ -18,7 +18,7 @@ class MeinHeader extends HTMLElement {
         <header class="site-header">
           <div class="header-inner">
               <a href="/index.html">
-                <img src="./assets/images/ChorX_Symbol.png" class="logo-img" alt="Symbol">
+                <img src="../../assets/images/ChorX_Symbol.png" class="logo-img" alt="Symbol">
               </a>
               <nav class="main-nav">
                 <ul class="nav-list">
@@ -31,7 +31,7 @@ class MeinHeader extends HTMLElement {
                 </ul>
               </nav>
               <a href="/index.html">
-                <img src="./assets/images/logo.png" class="logo-img" alt="Logo">
+                <img src="../../assets/images/logo.png" class="logo-img" alt="Logo">
               </a>
           </div>
         </header>

@@ -35,7 +35,7 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .tiles .tile:nth-child(6) {
+  .tiles .tile:nth-child(5) {
     grid-column: span 1;
   }
 
@@ -64,7 +64,7 @@
   position: relative;
 }
 
-.tiles .tile:nth-child(6) {
+.tiles .tile:nth-child(5) {
   grid-column: span 2;
   aspect-ratio: 2.323/0.25;
 }
