@@ -250,7 +250,7 @@
       flex-direction: column;
       justify-content: flex-start; /* Inhalte beginnen oben */
       align-items: center;         /* horizontal mittig */
-      gap: 3rem;                   /* Abstand zwischen Titel und Icons */
+      gap: 6rem;                   /* Abstand zwischen Titel und Icons */
       min-height: 200px;           /* optional, damit unten wirklich "unten" ist */
       padding-bottom: 15px;
     }
