@@ -243,6 +243,7 @@
   }
   .tiles .tile:nth-child(5) {
     grid-column: span 1;
+    aspect-ratio: 14/15;
   }
 
   .tile.tile-social {
