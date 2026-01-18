@@ -204,13 +204,46 @@
     color: #f0f0f0; /* Oder deine Akzentfarbe */
 }
 
+@media (max-width: 1170px) {
+  .tile.tile-social {
+    padding-top: 8.5rem;
+}
+}
+
+@media (max-width: 1100px) {
+  .tile.tile-social {
+    padding-top: 8rem;
+}
+}
+
+@media (max-width: 1000px) {
+  .tile.tile-social {
+    padding-top: 7rem;
+}
+}
+
+@media (max-width: 950px) {
+  .tile.tile-social {
+    padding-top: 6rem;
+}
+}
 
 /* Tablet-Ansicht: 2 Spalten */
 @media (max-width: 900px) {
   .tiles {
     grid-template-columns: repeat(2, 1fr);
   }
+  .tile.tile-social {
+    padding-top: 8rem;
 }
+}
+
+@media (max-width: 750px) {
+  .tile.tile-social {
+    padding-top: 5rem;
+}
+}
+
 
 /* Handy-Ansicht: 1 Spalte */
 @media (max-width: 600px) {
@@ -247,6 +280,31 @@
       align-items: center;         /* horizontal mittig */
       gap: 2.75rem;
       padding-bottom: 15px;
+      padding-top: 9rem;
     }
 
+}
+
+@media (max-width: 500px) {
+  .tile.tile-social {
+    padding-top: 7rem;
+}
+}
+
+@media (max-width: 400px) {
+  .tile.tile-social {
+    padding-top: 5rem;
+}
+}
+
+@media (max-width: 350px) {
+  .tile.tile-social {
+    padding-top: 3rem;
+}
+}
+
+@media (max-width: 300px) {
+  .tile.tile-social {
+    padding-top: 1rem;
+}
 }
