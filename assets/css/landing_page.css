@@ -36,7 +36,7 @@
 
 .tiles .tile:nth-child(5) {
   grid-column: span 2;
-  aspect-ratio: 2.323/0.25;
+  aspect-ratio: 34/15;
 }
 
 .tile-title {
