@@ -87,6 +87,7 @@
 
 /* Spezielle Kachel, die dem Muster widerspricht */
 .special-logo-tile {
+  aspect-ratio: 14/15;
   background: #ffffff; /* Weißer Hintergrund, damit das Logo wirkt */
   display: flex;
   height: 100%;
