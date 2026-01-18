@@ -177,8 +177,10 @@
     cursor: default;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Verteilt Titel oben und Icons unten */
+    justify-content: center; /* Verteilt Titel oben und Icons unten */
+    padding-top: 9.5rem;
     padding-bottom: 15px;
+    box-sizing: border-box;
 }
 
 /* Container für die SVGs */
