@@ -13,7 +13,7 @@
     "slug": "konzerte",    
     "description": "Konzert- und Probenkalender.",
     "image": "assets/images/Konzerte.png"},
-  { "title": "ChorGa", 
+  { "title": "ChOrga", 
     "slug": "chorga", 
     "description": "Chor Organisations Team",
     "image": "assets/images/ChorGa.png"},
