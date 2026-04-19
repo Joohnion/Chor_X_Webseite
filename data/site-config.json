@@ -1,6 +1,6 @@
 {
  "Banner": {
-    "text": "Semesterferien KEINE PROBE am 02.02.26 und 09.02.26! +++ +++ Neue Mitglieder gerne gesehen am 16.02.26, 23.02.26 und 02.03.26."
+    "text": "Nächstes Konzert am 20 Juni 2026 um 19:30 Uhr, Kirche Breitensee +++ +++ Neue Interessenten erst wieder ab dem nächsten Semester"
 },
   "Startseite": {
     "title_in_Reiter": "Wir sind Chor X",
@@ -10,7 +10,7 @@
   "Ueber_uns":{
       "title_im_Reiter": "Über uns - Chor X",
       "welcome_title": "Wir sind der Chor X",
-      "text": "Hallo und willkommen in der Welt des Chor X! Gegründet im Jahre 2011 bringen wir seit über10 Jahren jugendliche Frische, Leidenschaft und Lässigkeit in die Wiener Chorszene. Wie wir das schaffen? Oft durch Charme und Spritzigkeit, hauptsächlich aber mit Gesang aus den unterschiedlichsten Genres und Musikstilen, die wir 3-4 mal pro Jahr in ein unterhaltsames Konzert packen und damit Säle wie im Akademischen Gymnasium oder Kirchenräume wie in der Pfarre St. Florian füllen.Unser Kerngedanke ist einfach: Alle die Lust zum Singen haben, kann mitsingen. Ohne Eingangshürden. Ohne Lampenﬁeber. Ohne Stress. Dadurch können wir mit stolz sagen: Wir sind mit einer der jüngsten Chöre Wiens, mit starken, ausgeglichenen Registern einem ordentlichen Patzen Energie."
+      "text": "Hallo und willkommen in der Welt des Chor X! Gegründet im Jahre 2011 bringen wir seit über 10 Jahren jugendliche Frische, Leidenschaft und Lässigkeit in die Wiener Chorszene. Wie wir das schaffen? Oft durch Charme und Spritzigkeit, hauptsächlich aber mit Gesang aus den unterschiedlichsten Genres und Musikstilen, die wir 3-4 mal pro Jahr in ein unterhaltsames Konzert packen und damit Säle wie im Akademischen Gymnasium oder Kirchenräume wie in der Pfarre St. Florian füllen.Unser Kerngedanke ist einfach: Alle die Lust zum Singen haben, kann mitsingen. Ohne Eingangshürden. Ohne Lampenﬁeber. Ohne Stress. Dadurch können wir mit stolz sagen: Wir sind mit einer der jüngsten Chöre Wiens, mit starken, ausgeglichenen Registern einem ordentlichen Patzen Energie."
     },
   "Mitsingen":{
       "title_im_Reiter": "Mitsingen im Chor X",
@@ -23,9 +23,9 @@
     "title_im_Reiter": "Konzerte Chor X",
     "welcome_title": "Konzerte",
     "text": "Monatelang proben wir, feilen an Tönen, kämpfen mit hohen Lagen und tiefen Bässen alles für diesen einen Moment: unser Konzert! Eintritt? Natürlich frei! Wir wollen, dass jede*r dabei sein kann. Und wenn euch unser Gesang so sehr berührt, dass ihr denkt: „Das war besser als Netflix!“ dann freuen wir uns über eine kleine Spende. Also kommt vorbei, bringt eure Freunde mit und lasst euch von uns musikalisch umarmen. Versprochen: Wir singen, ihr genießt und am Ende gehen alle mit einem Ohrwurm nach Hause.Unser nächstes Konzert findet ihr im gelben Banner rechts.",
-    "naechstes_datum": "23. Jänner 2026",
-    "naechster_ort": "Akademisches Gymnasium,",
-    "addresse": "Beethovenplatz 1, 1010 Wien"
+    "naechstes_datum": "20. Juni 2026, 19:30",
+    "naechster_ort": "Kirche Breitensee,",
+    "addresse":"Laurentiusplatz 2, 1140 Wien"
 },
 "Vorstand":{
     "title_im_Reiter": "Vorstand Chor X",
