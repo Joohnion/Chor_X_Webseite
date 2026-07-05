@@ -49,11 +49,13 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  font-family: Arial, 'sans-serif';
 }
 
 .info-content h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+  font-family: Arial, 'sans-serif';
 }
 
 address {
@@ -61,4 +63,5 @@ address {
   font-weight: bold;
   margin-bottom: 2rem;
   color: #555;
+  font-family: Arial, 'sans-serif';
 }
